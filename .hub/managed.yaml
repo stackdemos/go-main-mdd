@@ -2,7 +2,7 @@ parameters:
   - name: application.description
     value: Golang microservice with Gorilla Mux
   - name: application.ingress
-    value: go-main-mdd.app.main-aws.sol01.superhub.io
+    value: go-main-mdd.app.acm-cicd.demo10.superhub.io
   - name: application.name
     value: go-main-mdd
   - name: application.namespace
@@ -12,21 +12,21 @@ parameters:
   - name: application.replicas
     value: '1'
   - name: component.dex.okta.appId
-    value: 0oa4hang0pJzV08g12p7
+    value: 0oa4ih4qqnJ4O4I3c2p7
   - name: component.dex.okta.clientId
-    value: 0oa4hang0pJzV08g12p7
+    value: 0oa4ih4qqnJ4O4I3c2p7
   - name: component.dex.okta.issuer
     value: 'https://agilestacks.okta.com'
   - name: component.docker.auth.basic.username
     value: admin
   - name: component.docker.auth.host
-    value: main-aws-harbor.app.main-aws.sol01.superhub.io
+    value: acm-cicd-harbor.svc.acm-cicd.demo10.superhub.io
   - name: component.docker.registry.image
-    value: main-aws-harbor.app.main-aws.sol01.superhub.io/library/go-main-mdd
+    value: acm-cicd-harbor.svc.acm-cicd.demo10.superhub.io/library/go-main-mdd
   - name: component.docker.registry.kind
     value: harbor
   - name: component.docker.registry.url
-    value: main-aws-harbor.app.main-aws.sol01.superhub.io/library
+    value: acm-cicd-harbor.svc.acm-cicd.demo10.superhub.io/library
   - name: component.github.repository.name
     value: go-main-mdd
   - name: component.github.repository.organization
